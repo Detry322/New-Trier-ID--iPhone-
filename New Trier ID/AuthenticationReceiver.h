@@ -10,6 +10,6 @@
 
 @protocol AuthenticationReceiver <NSObject>
 
-- (void) finishedAuthentication;
+- (void) finishedAuthentication:(BOOL)authenticated withErrorOrNil:(NSString *)error;
 
 @end

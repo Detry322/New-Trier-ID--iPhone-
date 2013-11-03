@@ -7,8 +7,11 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController">
             <connections>
                 <outlet property="IDField" destination="5y7-er-IKt" id="ice-Eh-lho"/>
+                <outlet property="Label" destination="DXW-LL-Ulx" id="33x-cN-8gW"/>
                 <outlet property="credentialView" destination="3DL-Ga-7f1" id="d6c-Ny-obQ"/>
+                <outlet property="label" destination="DXW-LL-Ulx" id="4U7-3f-eOS"/>
                 <outlet property="passwordField" destination="zfp-ON-MS5" id="f2z-3h-zfJ"/>
+                <outlet property="statusIndicator" destination="9Vs-e6-3uS" id="tK4-Jt-GRp"/>
                 <outlet property="view" destination="1" id="gw8-0k-EIw"/>
             </connections>
         </placeholder>
@@ -18,16 +21,16 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="9Vs-e6-3uS">
-                    <rect key="frame" x="142" y="277" width="37" height="37"/>
+                    <rect key="frame" x="142" y="260" width="37" height="37"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </activityIndicatorView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="newtrier.png" translatesAutoresizingMaskIntoConstraints="NO" id="vo5-Cq-61o">
-                    <rect key="frame" x="85" y="57" width="150" height="156"/>
+                    <rect key="frame" x="85" y="45" width="150" height="156"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </imageView>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3DL-Ga-7f1">
-                    <rect key="frame" x="44" y="248" width="233" height="80"/>
+                    <rect key="frame" x="44" y="239" width="233" height="80"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Student ID" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5y7-er-IKt">
@@ -51,7 +54,7 @@
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                 </view>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="233" translatesAutoresizingMaskIntoConstraints="NO" id="DXW-LL-Ulx">
-                    <rect key="frame" x="44" y="360" width="233" height="72"/>
+                    <rect key="frame" x="44" y="347" width="233" height="72"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <attributedString key="attributedText">
                         <fragment content="Log in to access your New Trier ID">

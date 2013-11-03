@@ -12,6 +12,7 @@
 #import "ScanViewController.h"
 #import "InfoViewController.h"
 #import "SuperViewController.h"
+#import "curl/curl.h"
 
 @implementation AppDelegate
 
@@ -19,6 +20,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    curl_global_init(0L);
     UIViewController *loginViewController = [[LoginViewController alloc] init];
     UINavigationController *globalNavigationController = [[UINavigationController alloc] initWithRootViewController:loginViewController];
     globalNavigationController.navigationBar.hidden = YES;

@@ -26,7 +26,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    [[UIApplication sharedApplication] setStatusBarOrientation:UIInterfaceOrientationLandscapeRight animated:NO];
+}
+
+-(void)viewWillAppear:(BOOL)animated {
+    [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationSlide];
+}
+
+-(void)viewWillDisappear:(BOOL)animated {
+    [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationSlide];
 }
 
 - (void)didReceiveMemoryWarning
@@ -35,4 +43,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)popopop:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
 @end

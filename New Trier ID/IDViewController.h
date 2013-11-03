@@ -12,5 +12,6 @@
 @interface IDViewController : UIViewController
 
 @property (strong, nonatomic) IBOutlet UIView *view;
+- (IBAction)popopop:(id)sender;
 
 @end

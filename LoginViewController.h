@@ -8,13 +8,18 @@
 
 #import <UIKit/UIKit.h>
 #import "SuperViewController.h"
+#import "AuthenticationManager.h"
 
-@interface LoginViewController : UIViewController
+@interface LoginViewController : UIViewController <UITextFieldDelegate, AuthenticationReceiver>
 
 @property (strong, nonatomic) IBOutlet UIView *view;
 @property (strong, nonatomic) IBOutlet UIView *credentialView;
 @property (strong, nonatomic) IBOutlet UITextField *IDField;
 @property (strong, nonatomic) IBOutlet UITextField *passwordField;
+@property (strong, nonatomic) IBOutlet UIActivityIndicatorView *statusIndicator;
+@property (strong, nonatomic) IBOutlet UILabel *label;
 
+- (BOOL)textFieldShouldReturn:(UITextField *)textField;
+- (void) finishedAuthentication:(BOOL)authenticated withErrorOrNil:(NSString *)error;
 
 @end
