@@ -7,12 +7,37 @@
 //
 
 #import "AppDelegate.h"
+#import "LoginViewController.h"
+#import "IDViewController.h"
+#import "ScanViewController.h"
+#import "InfoViewController.h"
+#import "SuperViewController.h"
 
 @implementation AppDelegate
 
+@synthesize window=_window;
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    UIViewController *loginViewController = [[LoginViewController alloc] init];
+    UINavigationController *globalNavigationController = [[UINavigationController alloc] initWithRootViewController:loginViewController];
+    globalNavigationController.navigationBar.hidden = YES;
+    
+    if (NO) //Check to see if logged in
+    {
+        UIViewController *idViewController = [[IDViewController alloc] init];
+        [globalNavigationController pushViewController:idViewController animated:NO];
+    }
+    _window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    _window.rootViewController = globalNavigationController;
+    [_window makeKeyAndVisible];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+
+    
+    
+   
+    
+    
     return YES;
 }
 							
