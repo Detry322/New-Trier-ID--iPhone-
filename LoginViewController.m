@@ -49,7 +49,9 @@
     self.credentialView.hidden = true;
     [self.statusIndicator startAnimating];
     AuthenticationManager *manager = [[AuthenticationManager alloc] init];
-    [manager authenticateUser:self.IDField.text withPassword:self.passwordField.text delegate:self];
+    //dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        [manager authenticateUser:self.IDField.text withPassword:self.passwordField.text delegate:self];
+    //});
     return NO;
 }
 

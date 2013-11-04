@@ -27,6 +27,10 @@
 {
     [super viewDidLoad];
     [[UIApplication sharedApplication] setStatusBarOrientation:UIInterfaceOrientationLandscapeRight animated:NO];
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    UIImage *barcodeImage = [[UIImage alloc] initWithContentsOfFile:[documentsDirectory stringByAppendingPathComponent:@"barcode.jpg"]];
+    [self.barcode setImage:barcodeImage];
 }
 
 -(void)viewWillAppear:(BOOL)animated {

@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		047141EA1826E8D700ADB365 /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 047141E91826E8D700ADB365 /* Base64.m */; };
-		04F932641826F56C00A76971 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F932631826F56C00A76971 /* Security.framework */; };
-		04F932661826F57C00A76971 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F932651826F57C00A76971 /* libz.dylib */; };
-		04F932681826F59A00A76971 /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F932671826F59A00A76971 /* libcurl.a */; };
 		04FE5CEF1825FEE600F09BCC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04FE5CEE1825FEE600F09BCC /* Foundation.framework */; };
 		04FE5CF11825FEE600F09BCC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04FE5CF01825FEE600F09BCC /* CoreGraphics.framework */; };
 		04FE5CF31825FEE600F09BCC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04FE5CF21825FEE600F09BCC /* UIKit.framework */; };
@@ -34,7 +30,6 @@
 		04FE5D3D182606B700F09BCC /* ScanView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04FE5D3C182606B700F09BCC /* ScanView.xib */; };
 		04FE5D3F182606C300F09BCC /* InfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04FE5D3E182606C300F09BCC /* InfoView.xib */; };
 		04FE5D411826162D00F09BCC /* newtrier.png in Resources */ = {isa = PBXBuildFile; fileRef = 04FE5D401826162D00F09BCC /* newtrier.png */; };
-		04FE5D431826244100F09BCC /* New_Trier_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 04FE5D421826244100F09BCC /* New_Trier_logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,20 +43,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		047141E81826E8D700ADB365 /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Base64.h; path = ../../../../Desktop/Base64.h; sourceTree = "<group>"; };
-		047141E91826E8D700ADB365 /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Base64.m; path = ../../../../Desktop/Base64.m; sourceTree = "<group>"; };
-		04F9325A1826F4D200A76971 /* curl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = curl.h; sourceTree = "<group>"; };
-		04F9325B1826F4D200A76971 /* curlbuild.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = curlbuild.h; sourceTree = "<group>"; };
-		04F9325C1826F4D200A76971 /* curlrules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = curlrules.h; sourceTree = "<group>"; };
-		04F9325D1826F4D200A76971 /* curlver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = curlver.h; sourceTree = "<group>"; };
-		04F9325E1826F4D200A76971 /* easy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = easy.h; sourceTree = "<group>"; };
-		04F9325F1826F4D200A76971 /* mprintf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mprintf.h; sourceTree = "<group>"; };
-		04F932601826F4D200A76971 /* multi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = multi.h; sourceTree = "<group>"; };
-		04F932611826F4D200A76971 /* stdcheaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stdcheaders.h; sourceTree = "<group>"; };
-		04F932621826F4D200A76971 /* typecheck-gcc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "typecheck-gcc.h"; sourceTree = "<group>"; };
-		04F932631826F56C00A76971 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		04F932651826F57C00A76971 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		04F932671826F59A00A76971 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcurl.a; sourceTree = "<group>"; };
 		04FE5CEB1825FEE600F09BCC /* New Trier ID.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "New Trier ID.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04FE5CEE1825FEE600F09BCC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		04FE5CF01825FEE600F09BCC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -96,7 +77,6 @@
 		04FE5D3C182606B700F09BCC /* ScanView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScanView.xib; sourceTree = "<group>"; };
 		04FE5D3E182606C300F09BCC /* InfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoView.xib; sourceTree = "<group>"; };
 		04FE5D401826162D00F09BCC /* newtrier.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = newtrier.png; path = Images.xcassets/newtrier.png; sourceTree = "<group>"; };
-		04FE5D421826244100F09BCC /* New_Trier_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = New_Trier_logo.png; path = ../../../../Desktop/New_Trier_logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,9 +84,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04F932681826F59A00A76971 /* libcurl.a in Frameworks */,
-				04F932661826F57C00A76971 /* libz.dylib in Frameworks */,
-				04F932641826F56C00A76971 /* Security.framework in Frameworks */,
 				04FE5CF11825FEE600F09BCC /* CoreGraphics.framework in Frameworks */,
 				04FE5CF31825FEE600F09BCC /* UIKit.framework in Frameworks */,
 				04FE5CEF1825FEE600F09BCC /* Foundation.framework in Frameworks */,
@@ -126,22 +103,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		04F932591826F4D200A76971 /* curl */ = {
-			isa = PBXGroup;
-			children = (
-				04F9325A1826F4D200A76971 /* curl.h */,
-				04F9325B1826F4D200A76971 /* curlbuild.h */,
-				04F9325C1826F4D200A76971 /* curlrules.h */,
-				04F9325D1826F4D200A76971 /* curlver.h */,
-				04F9325E1826F4D200A76971 /* easy.h */,
-				04F9325F1826F4D200A76971 /* mprintf.h */,
-				04F932601826F4D200A76971 /* multi.h */,
-				04F932611826F4D200A76971 /* stdcheaders.h */,
-				04F932621826F4D200A76971 /* typecheck-gcc.h */,
-			);
-			path = curl;
-			sourceTree = "<group>";
-		};
 		04FE5CE21825FEE600F09BCC = {
 			isa = PBXGroup;
 			children = (
@@ -164,9 +125,6 @@
 		04FE5CED1825FEE600F09BCC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				04F932671826F59A00A76971 /* libcurl.a */,
-				04F932651826F57C00A76971 /* libz.dylib */,
-				04F932631826F56C00A76971 /* Security.framework */,
 				04FE5CEE1825FEE600F09BCC /* Foundation.framework */,
 				04FE5CF01825FEE600F09BCC /* CoreGraphics.framework */,
 				04FE5CF21825FEE600F09BCC /* UIKit.framework */,
@@ -178,7 +136,6 @@
 		04FE5CF41825FEE600F09BCC /* New Trier ID */ = {
 			isa = PBXGroup;
 			children = (
-				04F932591826F4D200A76971 /* curl */,
 				04FE5D37182603A000F09BCC /* AuthenticationReceiver.h */,
 				04FE5D251825FFF800F09BCC /* LoginViewController.h */,
 				04FE5D281826007100F09BCC /* IDViewController.h */,
@@ -194,8 +151,6 @@
 				04FE5D321826017F00F09BCC /* AuthenticationManager.m */,
 				04FE5D381826068300F09BCC /* LoginView.xib */,
 				04FE5D3A1826069F00F09BCC /* IDView.xib */,
-				047141E81826E8D700ADB365 /* Base64.h */,
-				047141E91826E8D700ADB365 /* Base64.m */,
 				04FE5D3C182606B700F09BCC /* ScanView.xib */,
 				04FE5D3E182606C300F09BCC /* InfoView.xib */,
 				04FE5CFD1825FEE600F09BCC /* AppDelegate.h */,
@@ -211,7 +166,6 @@
 			children = (
 				04FE5D401826162D00F09BCC /* newtrier.png */,
 				04FE5CF61825FEE600F09BCC /* New Trier ID-Info.plist */,
-				04FE5D421826244100F09BCC /* New_Trier_logo.png */,
 				04FE5CF71825FEE600F09BCC /* InfoPlist.strings */,
 				04FE5CFA1825FEE600F09BCC /* main.m */,
 				04FE5CFC1825FEE600F09BCC /* New Trier ID-Prefix.pch */,
@@ -317,7 +271,6 @@
 				04FE5D3D182606B700F09BCC /* ScanView.xib in Resources */,
 				04FE5D411826162D00F09BCC /* newtrier.png in Resources */,
 				04FE5D3B1826069F00F09BCC /* IDView.xib in Resources */,
-				04FE5D431826244100F09BCC /* New_Trier_logo.png in Resources */,
 				04FE5D3F182606C300F09BCC /* InfoView.xib in Resources */,
 				04FE5CF91825FEE600F09BCC /* InfoPlist.strings in Resources */,
 				04FE5D391826068300F09BCC /* LoginView.xib in Resources */,
@@ -346,7 +299,6 @@
 				04FE5D2A1826007100F09BCC /* IDViewController.m in Sources */,
 				04FE5CFB1825FEE600F09BCC /* main.m in Sources */,
 				04FE5D361826038300F09BCC /* SuperViewController.m in Sources */,
-				047141EA1826E8D700ADB365 /* Base64.m in Sources */,
 				04FE5D271825FFF800F09BCC /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

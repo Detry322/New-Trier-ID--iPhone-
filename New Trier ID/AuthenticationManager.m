@@ -12,18 +12,8 @@
 
 - (void) authenticateUser:(NSString *)user withPassword:(NSString *)password delegate:(id<AuthenticationReceiver>)delegate
 {
-    self.callback = delegate;
-    if ([user isEqualToString:@""])
-        user = @" ";
-    if ([password isEqualToString:@""])
-        password = @" ";
-    self.user = user;
-    self.password = password;
-    self.stage = 0;
-    self.authenticationString = [self base64Encode:[NSString stringWithFormat:@"%@:%@", user, password]];
-    self.request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:[@"https://onlinefiles.nths.net/admin/in-openpicture.asp?FileUserID=" stringByAppendingString:self.user]]];
-    NSURLConnection *conn = [NSURLConnection connectionWithRequest:self.request delegate:self];
-    
+    [delegate finishedAuthentication:YES withErrorOrNil:nil];
+    return;
 }
 
 

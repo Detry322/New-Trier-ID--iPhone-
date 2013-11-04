@@ -6,6 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IDViewController">
             <connections>
+                <outlet property="barcode" destination="zG5-Ji-omU" id="zZ6-Rl-aYJ"/>
                 <outlet property="view" destination="1" id="w7f-kF-hJ2"/>
             </connections>
         </placeholder>
@@ -24,6 +25,10 @@
                         <action selector="popopop:" destination="-1" eventType="touchUpInside" id="9gZ-tW-3fG"/>
                     </connections>
                 </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zG5-Ji-omU">
+                    <rect key="frame" x="20" y="288" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
             </subviews>
             <color key="backgroundColor" red="0.0" green="0.25" blue="0.029211138469999998" alpha="1" colorSpace="calibratedRGB"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>

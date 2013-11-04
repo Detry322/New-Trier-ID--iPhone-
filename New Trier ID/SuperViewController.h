@@ -15,6 +15,6 @@
 #import "InfoViewController.h"
 #import "LoginViewController.h"
 
-@interface SuperViewController : UIViewController <AuthenticationReceiver>
+@interface SuperViewController : UIViewController
 
 @end

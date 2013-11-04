@@ -20,7 +20,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    curl_global_init(0L);
     UIViewController *loginViewController = [[LoginViewController alloc] init];
     UINavigationController *globalNavigationController = [[UINavigationController alloc] initWithRootViewController:loginViewController];
     globalNavigationController.navigationBar.hidden = YES;

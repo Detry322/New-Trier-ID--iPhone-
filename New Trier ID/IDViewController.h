@@ -13,5 +13,6 @@
 
 @property (strong, nonatomic) IBOutlet UIView *view;
 - (IBAction)popopop:(id)sender;
+@property (strong, nonatomic) IBOutlet UIImageView *barcode;
 
 @end
