@@ -12,7 +12,6 @@
 #import "ScanViewController.h"
 #import "InfoViewController.h"
 #import "SuperViewController.h"
-#import "curl/curl.h"
 
 @implementation AppDelegate
 
@@ -33,12 +32,13 @@
     _window.rootViewController = globalNavigationController;
     [_window makeKeyAndVisible];
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
-
-    
-    
-   
-    
-    
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    if ([prefs boolForKey:@"authenticated"])
+    {
+        UIViewController *idView = [[IDViewController alloc] init];
+        [loginViewController setWantsFullScreenLayout:YES];
+        [globalNavigationController pushViewController:idView animated:YES];
+    }
     return YES;
 }
 							

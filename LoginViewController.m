@@ -49,9 +49,9 @@
     self.credentialView.hidden = true;
     [self.statusIndicator startAnimating];
     AuthenticationManager *manager = [[AuthenticationManager alloc] init];
-    //dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         [manager authenticateUser:self.IDField.text withPassword:self.passwordField.text delegate:self];
-    //});
+    });
     return NO;
 }
 
@@ -59,6 +59,9 @@
 {
     if (authenticated)
     {
+        NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+        [prefs setBool:YES forKey:@"authenticated"];
+        [prefs synchronize];
         UIViewController *idView = [[IDViewController alloc] init];
         [self setWantsFullScreenLayout:YES];
         [self.navigationController pushViewController:idView animated:YES];

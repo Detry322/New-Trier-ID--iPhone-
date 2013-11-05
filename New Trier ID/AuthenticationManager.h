@@ -8,11 +8,13 @@
 
 #import <Foundation/Foundation.h>
 #import "AuthenticationReceiver.h"
-#import "Base64.h"
-#import "curl/curl.h"
 
 @interface AuthenticationManager : NSObject
 
+@property NSUserDefaults *prefs;
+
+@property id <AuthenticationReceiver> callback;
+- (NSString *) getBarcodeFromID:(NSString *)idNumber;
 - (void) authenticateUser:(NSString *)user withPassword:(NSString *)password delegate:(id <AuthenticationReceiver>)delegate;
 
 @end

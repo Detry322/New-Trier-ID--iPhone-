@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		044F7B1618274B8400F0B24F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044F7B1518274B8400F0B24F /* CFNetwork.framework */; };
+		044F7B1818274B8F00F0B24F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044F7B1718274B8F00F0B24F /* SystemConfiguration.framework */; };
+		044F7B1A18274B9800F0B24F /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 044F7B1918274B9800F0B24F /* libz.dylib */; };
+		0476CA0B1827794F000F18C2 /* 20140031.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0476CA0A1827794F000F18C2 /* 20140031.jpg */; };
+		047BCADF18285AED006700F9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 047BCADE18285AED006700F9 /* Security.framework */; };
+		047BCAE118285AF5006700F9 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 047BCAE018285AF5006700F9 /* ImageIO.framework */; };
+		047BCAED182880B5006700F9 /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 047BCAEC182880B5006700F9 /* libcurl.a */; };
 		04FE5CEF1825FEE600F09BCC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04FE5CEE1825FEE600F09BCC /* Foundation.framework */; };
 		04FE5CF11825FEE600F09BCC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04FE5CF01825FEE600F09BCC /* CoreGraphics.framework */; };
 		04FE5CF31825FEE600F09BCC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04FE5CF21825FEE600F09BCC /* UIKit.framework */; };
@@ -43,6 +50,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		044F7B1518274B8400F0B24F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		044F7B1718274B8F00F0B24F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		044F7B1918274B9800F0B24F /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		0476CA0A1827794F000F18C2 /* 20140031.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 20140031.jpg; path = ../../../../Desktop/20140031.jpg; sourceTree = "<group>"; };
+		047BCADE18285AED006700F9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		047BCAE018285AF5006700F9 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		047BCAE3182880B5006700F9 /* curl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = curl.h; sourceTree = "<group>"; };
+		047BCAE4182880B5006700F9 /* curlbuild.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = curlbuild.h; sourceTree = "<group>"; };
+		047BCAE5182880B5006700F9 /* curlrules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = curlrules.h; sourceTree = "<group>"; };
+		047BCAE6182880B5006700F9 /* curlver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = curlver.h; sourceTree = "<group>"; };
+		047BCAE7182880B5006700F9 /* easy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = easy.h; sourceTree = "<group>"; };
+		047BCAE8182880B5006700F9 /* mprintf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mprintf.h; sourceTree = "<group>"; };
+		047BCAE9182880B5006700F9 /* multi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = multi.h; sourceTree = "<group>"; };
+		047BCAEA182880B5006700F9 /* stdcheaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stdcheaders.h; sourceTree = "<group>"; };
+		047BCAEB182880B5006700F9 /* typecheck-gcc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "typecheck-gcc.h"; sourceTree = "<group>"; };
+		047BCAEC182880B5006700F9 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcurl.a; sourceTree = "<group>"; };
 		04FE5CEB1825FEE600F09BCC /* New Trier ID.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "New Trier ID.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04FE5CEE1825FEE600F09BCC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		04FE5CF01825FEE600F09BCC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -84,7 +107,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				047BCAE118285AF5006700F9 /* ImageIO.framework in Frameworks */,
+				047BCADF18285AED006700F9 /* Security.framework in Frameworks */,
+				047BCAED182880B5006700F9 /* libcurl.a in Frameworks */,
 				04FE5CF11825FEE600F09BCC /* CoreGraphics.framework in Frameworks */,
+				044F7B1A18274B9800F0B24F /* libz.dylib in Frameworks */,
+				044F7B1818274B8F00F0B24F /* SystemConfiguration.framework in Frameworks */,
+				044F7B1618274B8400F0B24F /* CFNetwork.framework in Frameworks */,
 				04FE5CF31825FEE600F09BCC /* UIKit.framework in Frameworks */,
 				04FE5CEF1825FEE600F09BCC /* Foundation.framework in Frameworks */,
 			);
@@ -103,6 +132,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		047BCAE2182880B5006700F9 /* curl */ = {
+			isa = PBXGroup;
+			children = (
+				047BCAE3182880B5006700F9 /* curl.h */,
+				047BCAE4182880B5006700F9 /* curlbuild.h */,
+				047BCAE5182880B5006700F9 /* curlrules.h */,
+				047BCAE6182880B5006700F9 /* curlver.h */,
+				047BCAE7182880B5006700F9 /* easy.h */,
+				047BCAE8182880B5006700F9 /* mprintf.h */,
+				047BCAE9182880B5006700F9 /* multi.h */,
+				047BCAEA182880B5006700F9 /* stdcheaders.h */,
+				047BCAEB182880B5006700F9 /* typecheck-gcc.h */,
+			);
+			path = curl;
+			sourceTree = "<group>";
+		};
 		04FE5CE21825FEE600F09BCC = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +170,11 @@
 		04FE5CED1825FEE600F09BCC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				047BCAE018285AF5006700F9 /* ImageIO.framework */,
+				047BCADE18285AED006700F9 /* Security.framework */,
+				044F7B1918274B9800F0B24F /* libz.dylib */,
+				044F7B1718274B8F00F0B24F /* SystemConfiguration.framework */,
+				044F7B1518274B8400F0B24F /* CFNetwork.framework */,
 				04FE5CEE1825FEE600F09BCC /* Foundation.framework */,
 				04FE5CF01825FEE600F09BCC /* CoreGraphics.framework */,
 				04FE5CF21825FEE600F09BCC /* UIKit.framework */,
@@ -136,6 +186,8 @@
 		04FE5CF41825FEE600F09BCC /* New Trier ID */ = {
 			isa = PBXGroup;
 			children = (
+				047BCAE2182880B5006700F9 /* curl */,
+				047BCAEC182880B5006700F9 /* libcurl.a */,
 				04FE5D37182603A000F09BCC /* AuthenticationReceiver.h */,
 				04FE5D251825FFF800F09BCC /* LoginViewController.h */,
 				04FE5D281826007100F09BCC /* IDViewController.h */,
@@ -164,6 +216,7 @@
 		04FE5CF51825FEE600F09BCC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0476CA0A1827794F000F18C2 /* 20140031.jpg */,
 				04FE5D401826162D00F09BCC /* newtrier.png */,
 				04FE5CF61825FEE600F09BCC /* New Trier ID-Info.plist */,
 				04FE5CF71825FEE600F09BCC /* InfoPlist.strings */,
@@ -273,6 +326,7 @@
 				04FE5D3B1826069F00F09BCC /* IDView.xib in Resources */,
 				04FE5D3F182606C300F09BCC /* InfoView.xib in Resources */,
 				04FE5CF91825FEE600F09BCC /* InfoPlist.strings in Resources */,
+				0476CA0B1827794F000F18C2 /* 20140031.jpg in Resources */,
 				04FE5D391826068300F09BCC /* LoginView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,6 +479,7 @@
 					"$(inherited)",
 					/Users/Jack/Downloads/iOScURL,
 					"/Users/Jack/Dropbox/Coding\\ Projects/New\\ Trier\\ ID",
+					"/Users/Jack/Dropbox/Coding\\ Projects/New\\ Trier\\ ID/New\\ Trier\\ ID",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -443,6 +498,7 @@
 					"$(inherited)",
 					/Users/Jack/Downloads/iOScURL,
 					"/Users/Jack/Dropbox/Coding\\ Projects/New\\ Trier\\ ID",
+					"/Users/Jack/Dropbox/Coding\\ Projects/New\\ Trier\\ ID/New\\ Trier\\ ID",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;

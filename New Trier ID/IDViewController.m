@@ -27,14 +27,21 @@
 {
     [super viewDidLoad];
     [[UIApplication sharedApplication] setStatusBarOrientation:UIInterfaceOrientationLandscapeRight animated:NO];
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *documentsDirectory = [paths objectAtIndex:0];
-    UIImage *barcodeImage = [[UIImage alloc] initWithContentsOfFile:[documentsDirectory stringByAppendingPathComponent:@"barcode.jpg"]];
-    [self.barcode setImage:barcodeImage];
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    UIImage *barcodeImage = [[UIImage alloc] initWithData:[prefs dataForKey:@"barcodeImage"]];
+    [self.barcode setImage:[[UIImage alloc] initWithCGImage:barcodeImage.CGImage scale:1.0 orientation:UIImageOrientationRight]];
+    UIImage *pictureImage = [[UIImage alloc] initWithData:[prefs dataForKey:@"pictureImage"]];
+    [self.picture setImage:pictureImage];
+    int year = [prefs integerForKey:@"schoolYear"];
+    self.year.text = [NSString stringWithFormat:@"%d-%d",year-1,year];
+    self.idNumber.text = [prefs stringForKey:@"idNumber"];
+    self.name.text = [prefs stringForKey:@"fullName"];
+    [[UIScreen mainScreen] setBrightness:1.0];
 }
 
 -(void)viewWillAppear:(BOOL)animated {
     [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationSlide];
+    [[UIScreen mainScreen] setBrightness:1.0];
 }
 
 -(void)viewWillDisappear:(BOOL)animated {
@@ -48,6 +55,9 @@
 }
 
 - (IBAction)popopop:(id)sender {
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    [prefs setBool:NO forKey:@"authenticated"];
+    [prefs synchronize];
     [self.navigationController popViewControllerAnimated:YES];
 }
 @end

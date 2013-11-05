@@ -14,5 +14,9 @@
 @property (strong, nonatomic) IBOutlet UIView *view;
 - (IBAction)popopop:(id)sender;
 @property (strong, nonatomic) IBOutlet UIImageView *barcode;
+@property (strong, nonatomic) IBOutlet UIImageView *picture;
+@property (strong, nonatomic) IBOutlet UILabel *name;
+@property (strong, nonatomic) IBOutlet UILabel *idNumber;
+@property (strong, nonatomic) IBOutlet UILabel *year;
 
 @end
