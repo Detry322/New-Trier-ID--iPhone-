@@ -140,7 +140,6 @@ size_t write_data(void *ptr, size_t size, size_t nmemb, struct url_data *data) {
     NSRange i = [nameFinder rangeOfString:@"vtxtFromName=\""];
     NSRange j = [nameFinder rangeOfString:@"\"" options:NSLiteralSearch range:NSMakeRange(i.location+i.length+2, 1000)];
     NSString *name = [nameFinder substringWithRange:NSMakeRange(i.location+i.length, j.location-(i.location+i.length))];
-    NSLog(@"%@", name);
     [_prefs setObject:name forKey:@"fullName"];
     
     curl_easy_setopt(handle, CURLOPT_WRITEDATA, &req5);
@@ -148,7 +147,6 @@ size_t write_data(void *ptr, size_t size, size_t nmemb, struct url_data *data) {
     curl_easy_setopt(handle, CURLOPT_URL, imageURL);
     curl_easy_perform(handle);
     NSData *pictureImageData = [self dataFromStruct:&req5];
-    NSLog(@"%d", pictureImageData.length);
     
     [_prefs setObject:pictureImageData forKey:@"pictureImage"];
     [_prefs setObject:user forKey:@"idNumber"];

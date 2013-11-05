@@ -62,7 +62,11 @@
         NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
         [prefs setBool:YES forKey:@"authenticated"];
         [prefs synchronize];
-        UIViewController *idView = [[IDViewController alloc] init];
+        UIViewController *idView;
+        if (IS_IPHONE_5)
+            idView = [[IDViewController alloc] initWithNibName:@"IDViewExtended" bundle:nil];
+        else
+            idView = [[IDViewController alloc] initWithNibName:@"IDViewShort" bundle:nil];
         [self setWantsFullScreenLayout:YES];
         [self.navigationController pushViewController:idView animated:YES];
         self.label.text = @"Log in to access your New Trier ID";

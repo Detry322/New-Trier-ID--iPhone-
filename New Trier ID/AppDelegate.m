@@ -19,15 +19,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    UIViewController *loginViewController = [[LoginViewController alloc] init];
+    UIViewController *loginViewController;
+    if (IS_IPHONE_5)
+        loginViewController = [[LoginViewController alloc] initWithNibName:@"LoginViewExtended" bundle:nil];
+    else
+        loginViewController = [[LoginViewController alloc] initWithNibName:@"LoginViewShort" bundle:nil];
     UINavigationController *globalNavigationController = [[UINavigationController alloc] initWithRootViewController:loginViewController];
     globalNavigationController.navigationBar.hidden = YES;
-    
-    if (NO) //Check to see if logged in
-    {
-        UIViewController *idViewController = [[IDViewController alloc] init];
-        [globalNavigationController pushViewController:idViewController animated:NO];
-    }
     _window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     _window.rootViewController = globalNavigationController;
     [_window makeKeyAndVisible];
@@ -35,7 +33,11 @@
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
     if ([prefs boolForKey:@"authenticated"])
     {
-        UIViewController *idView = [[IDViewController alloc] init];
+        UIViewController *idView;
+        if (IS_IPHONE_5)
+            idView = [[IDViewController alloc] initWithNibName:@"IDViewExtended" bundle:nil];
+        else
+            idView = [[IDViewController alloc] initWithNibName:@"IDViewShort" bundle:nil];
         [loginViewController setWantsFullScreenLayout:YES];
         [globalNavigationController pushViewController:idView animated:YES];
     }
